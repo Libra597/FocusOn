@@ -1,21 +1,21 @@
 # FocusOn
 
 一、整体架构
-专注助手（Focus on）由Jyq独立开发，采用MVVM架构模式，
 
-利用Android CameraX实现相机模块，将数据库封装于底层Repository，
+专注助手（Focus on）由Jyq独立开发，采用MVVM架构模式，利用Android CameraX实现相机模块，
 
-利用ViewModel提供和处理数据。App遵循Activity -> Fragment两层架构，
+将数据库封装于底层Repository，利用ViewModel提供和处理数据。App遵循Activity -> Fragment两层架构，
 
 使用Jetpack导航组件实现界面切换。
 
 
 二、App组成
-App分为三个包，Camera包含CameraActivity及其Viewmodel；
 
-database包含数据、Dao、repository、Database；
+1. App分为三个包，Camera包含CameraActivity及其Viewmodel；
 
-ui包含以导航控制的多Fragment界面。
+2. database包含数据、Dao、repository、Database；
+
+3. ui包含以导航控制的多Fragment界面。
 
 
 
