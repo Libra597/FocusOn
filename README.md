@@ -13,7 +13,7 @@ ui包含以导航控制的多Fragment界面。
 
 三、App功能
 App以Camera帮助用户专注为目的，
-![1.jpg](https://s2.loli.net/2022/08/01/rf9X8QMSTezlDOk.jpg)
+![1.jpg](https://s2.loli.net/2022/08/01/flhTtX34JZmjUOC.jpg)
 
 
 
