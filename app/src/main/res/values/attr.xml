@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="myBgColor" format="color" />
+    <attr name="bgcolor2"   format="color"/>
+    <attr name="myButtonColor" format="color" />
+    <attr name="myTextColor" format="color" />
+
+
+
+
+
+</resources>

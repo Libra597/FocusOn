@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.red" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/red_fei</item>
+        <item name="colorPrimaryVariant">@color/red_fei</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+
+        <item name="colorSecondary">#F68E4D</item>
+        <item name="colorSecondaryVariant">#F48540</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="bgcolor2">#EB5D3D</item>
+        <item name="myBgColor">@color/purple_700</item>
+        <item name="myButtonColor">@color/yujin</item>
+        <item name="myTextColor">@color/qingcong</item>
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.green" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/qingcong</item>
+        <item name="colorPrimaryVariant">@color/qingcong</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#11CA80</item>
+        <item name="colorSecondaryVariant">#11CA80</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="bgcolor2">#1CB657</item>
+        <item name="myBgColor">@color/purple_700</item>
+        <item name="myButtonColor">@color/yujin</item>
+        <item name="myTextColor">@color/qingcong</item>
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.yellow" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/yujin</item>
+        <item name="colorPrimaryVariant">@color/yujin</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#E58D08</item>
+        <item name="colorSecondaryVariant">#E58D08</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="bgcolor2">#FF8000</item>
+        <item name="myBgColor">@color/purple_700</item>
+        <item name="myButtonColor">@color/yujin</item>
+        <item name="myTextColor">@color/qingcong</item>
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.dark" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#3F4A49</item>
+        <item name="colorPrimaryVariant">#37403F</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#262929</item>
+        <item name="colorSecondaryVariant">#232626</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="bgcolor2">#232626</item>
+        <item name="myBgColor">@color/purple_700</item>
+        <item name="myButtonColor">@color/yujin</item>
+        <item name="myTextColor">@color/qingcong</item>
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+
+    <style name="Theme.blue" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/bilan</item>
+        <item name="colorPrimaryVariant">@color/bilan</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#05D6EA</item>
+        <item name="colorSecondaryVariant">#05D6EA</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="bgcolor2">#4169E1</item>
+        <item name="myBgColor">@color/purple_700</item>
+        <item name="myButtonColor">@color/yujin</item>
+        <item name="myTextColor">@color/qingcong</item>
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>

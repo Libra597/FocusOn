@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_focus">
+
+    <fragment
+        android:id="@+id/navigation_focus"
+        android:name="com.example.myapp2.ui.focus.FocusFragment"
+        android:label="专注"
+        tools:layout="@layout/fragment_focus" />
+
+    <fragment
+        android:id="@+id/navigation_record"
+        android:name="com.example.myapp2.ui.record.fragment.RecordFragment"
+        android:label="记录"
+        tools:layout="@layout/fragment_record" />
+
+    <fragment
+        android:id="@+id/navigation_mine"
+        android:name="com.example.myapp2.ui.mine.MineFragment"
+        android:label="我的"
+        tools:layout="@layout/fragment_mine" >
+        <action
+            android:id="@+id/action_navigation_mine_to_themeFragment"
+            app:destination="@id/themeFragment" />
+        <action
+            android:id="@+id/action_navigation_mine_to_aboutFragment"
+            app:destination="@id/aboutFragment" />
+        <action
+            android:id="@+id/action_navigation_mine_to_targetFragment"
+            app:destination="@id/targetFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.example.myapp2.ui.mine.appsettings.AboutFragment"
+        android:label="关于App"
+        tools:layout="@layout/fragment_about" >
+        <action
+            android:id="@+id/action_aboutFragment_to_navigation_mine"
+            app:destination="@id/navigation_mine"
+            app:popUpTo="@id/navigation_mine"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/targetFragment"
+        android:name="com.example.myapp2.ui.mine.appsettings.TargetFragment"
+        android:label="我的目标"
+        tools:layout="@layout/fragment_target" >
+        <action
+            android:id="@+id/action_targetFragment_to_navigation_mine"
+            app:destination="@id/navigation_mine"
+            app:popUpTo="@id/navigation_mine"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/themeFragment"
+        android:name="com.example.myapp2.ui.mine.appsettings.ThemeFragment"
+        android:label="主题"
+        tools:layout="@layout/fragment_theme">
+        <action
+            android:id="@+id/action_themeFragment_to_navigation_mine"
+            app:destination="@id/navigation_mine"
+            app:popUpTo="@id/navigation_mine"
+            app:popUpToInclusive="true"/>
+    </fragment>
+</navigation>

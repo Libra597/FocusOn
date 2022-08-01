@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.mine.MineFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="?attr/bgcolor2"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="-5dp">
+
+            <TextView
+                android:id="@+id/self_sign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="132dp"
+                android:layout_marginTop="84dp"
+                android:text="去翻山外的山。"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/self_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="144dp"
+                android:layout_marginTop="44dp"
+                android:text="J.y.q"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="36dp"
+                app:cardCornerRadius="36dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/self_icon"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="164dp"
+                    android:layout_marginTop="0dp"
+                    android:src="@drawable/icon"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                     />
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-24dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="24dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="14dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView36"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="9dp"
+                    android:paddingStart="20dp"
+                    android:text="个人设置"
+                    android:textSize="20sp" />
+
+                <view
+                    android:id="@+id/view5"
+                    class="androidx.appcompat.widget.LinearLayoutCompat"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#767B7B" />
+
+                <LinearLayout
+                    android:id="@+id/self_target"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    tools:ignore="TouchTargetSizeCheck">
+
+
+                    <ImageView
+                        android:id="@+id/imageView10"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_marginEnd="15dp"
+                        android:src="@android:drawable/ic_menu_myplaces" />
+
+                    <TextView
+                        android:id="@+id/textView38"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="我的目标"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView11"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/ic_right" />
+                </LinearLayout>
+                <view
+                    android:id="@+id/view8"
+                    class="androidx.appcompat.widget.LinearLayoutCompat"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#CCD4D4" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="12dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="6dp"
+                        android:layout_weight="2.5"
+                        android:textSize="15sp"
+                        android:text="已专注/目标" />
+
+                    <ProgressBar
+                        android:id="@+id/progressBar"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:progressBackgroundTint="?attr/bgcolor2"
+                        android:progress="50"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <view
+                    android:id="@+id/view"
+                    class="androidx.appcompat.widget.LinearLayoutCompat"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#767B7B" />
+
+                <view
+                    android:id="@+id/view2"
+                    class="androidx.appcompat.widget.LinearLayoutCompat"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#767B7B" />
+
+                <view
+                    android:id="@+id/view3"
+                    class="androidx.appcompat.widget.LinearLayoutCompat"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="#CFD9D9" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-22dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView37"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="9dp"
+                    android:paddingStart="20dp"
+                    android:text="应用设置"
+                    android:textSize="20sp" />
+
+                <view
+                    android:id="@+id/view6"
+                    class="androidx.appcompat.widget.LinearLayoutCompat"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#767B7B" />
+
+                <LinearLayout
+                    android:id="@+id/set_theme"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingStart="15dp"
+
+                    android:paddingEnd="15dp">
+
+                    <ImageView
+                        android:id="@+id/imageView8"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_marginEnd="15dp"
+
+                        android:src="@drawable/ic_menu_project" />
+
+                    <TextView
+                        android:id="@+id/textView35"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="主题设置"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView9"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+
+                        android:src="@drawable/ic_right" />
+
+                </LinearLayout>
+
+                <view
+                    android:id="@+id/view4"
+                    class="androidx.appcompat.widget.LinearLayoutCompat"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#767B7B" />
+
+                <LinearLayout
+                    android:id="@+id/set_information"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp">
+
+                    <ImageView
+                        android:id="@+id/imageView16"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_marginEnd="15dp"
+                        android:src="@android:drawable/ic_dialog_info" />
+
+                    <TextView
+                        android:id="@+id/textView41"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="关于应用"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView17"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/ic_right" />
+
+                </LinearLayout>
+
+                <view
+                    android:id="@+id/view7"
+                    class="androidx.appcompat.widget.LinearLayoutCompat"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#767B7B" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
